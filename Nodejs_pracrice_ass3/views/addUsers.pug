@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Add Users
+        link(rel="stylesheet", href="css/addUsers.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/") Users
+                    li.main-header__item
+                        a(href="/add-user")  Add User
+        main 
+            h1 Add users
+            form(action="/add-user", method="post") 
+                label(for="users")
+                input(type="text", id="users" name="users" title="userName") 
+                button(type="submit") Add User
